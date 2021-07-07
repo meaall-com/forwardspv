@@ -1,0 +1,27 @@
+{
+  "name": "pv forward",
+  "description": "A telegram bot To Download Youtube Files ",
+  "logo": "",
+  "keywords": [
+    "Youtufhhbbe","cgjjgff"
+  ],
+  "repository": "https://github.com/meaall-com/forwardspv",
+  "success_url": "https://t.me/meaallh100",
+  "website": ,
+  "env": {
+        "ANY_VALUE": {"description": "any value true", "required": true},
+  },
+      "buildpacks": [
+        {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"},
+        {"url": "heroku/python"}
+    ],
+  "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+      "stack": "heroku-20"
+
+
+}
