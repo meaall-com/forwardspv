@@ -13,25 +13,4 @@ async def replier(event):
 	
 
 
-@client.on(events.NewMessage(chats=[-1001057566761]))
-async def replier(event):
-	print(event)
-	await event.forward_to("@Processing_meaallhl")
-	
-
-@client.on(events.NewMessage(chats=[-1001087482329]))
-async def replier(event):
-	print(event)
-	await event.forward_to("@Processing_meaallhl")
-	
-	
-
-@client.on(events.NewMessage(chats=[-1001159025906]))
-async def replier(event):
-	print(event)
-	await event.forward_to("@zyzzzyz")
-	
-
-
-
 client.run_until_disconnected()
