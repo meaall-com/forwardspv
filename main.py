@@ -8,7 +8,6 @@ client.start()
 
 @client.on(events.NewMessage(chats=[155836063]))
 async def replier(event):
-	print(event)
 	await event.forward_to("@Processing_meaallh")
 	
 
