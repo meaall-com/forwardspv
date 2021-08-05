@@ -1,7 +1,7 @@
 from telethon import TelegramClient, events
 import asyncio
 
-client = TelegramClient("session", 1497933, "c0780c2359c081e206bbb180f3050a5c")
+client = TelegramClient("session", 2427294, "7bb64c0340f2e917dcaccf97dec6adb4")
 
 client.start()
 
