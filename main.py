@@ -1,6 +1,6 @@
 from pyrogram import Client
 
-app = Client("session", 2427294, "7bb64c0340f2e917dcaccf97dec6adb4")
+app = Client("myssion", 2427294, "7bb64c0340f2e917dcaccf97dec6adb4")
 
 
 @app.on_message()
