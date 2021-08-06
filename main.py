@@ -1,16 +1,11 @@
-from telethon import TelegramClient, events
-import asyncio
+from pyrogram import Client
 
-client = TelegramClient("session", 2427294, "7bb64c0340f2e917dcaccf97dec6adb4")
-
-client.start()
+app = Client("session", 2427294, "7bb64c0340f2e917dcaccf97dec6adb4")
 
 
-@client.on(events.NewMessage(chats=[155836063]))
-async def replier(event):
-	print(event)
-	await event.forward_to("@Processing_meaallh")
-	
+@app.on_message()
+def my_handler(client, message):
+    message.forward("me")
 
 
-client.run_until_disconnected()
+app.run()
